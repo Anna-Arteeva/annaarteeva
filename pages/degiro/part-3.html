@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 3. DeGiro Trading Platform redesign. Anna Arteeva - Product Designer, UX specialist </title>
+    <link rel="stylesheet" href="../../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<nav class="nav">
+    <a class="nav--link" href="../../index.html">
+        Portfolio
+    </a>
+    <a class="nav--link" target="_blank" href="https://www.linkedin.com/in/annaarteeva/">
+        CV
+    </a>
+    <a class="nav--link" href="../../about.html">
+        About
+    </a>
+</nav>
+
+<section class="article">
+
+    <h6 class="article-date">January 2018</h6>
+    <h1 class="article-title">
+        Part 3.<br>
+        Team communication and development hand-off
+    </h1>
+    <p class="article-intro">
+
+    </p>
+
+    <blockquote class="article-quote">
+        “Involving people on early stages and listening to their feedback you make them being true owners of what your
+        are making”
+    </blockquote>
+
+    <h2>
+        The value of low fidelity
+    </h2>
+    <p>
+        I always start with sketches on paper, not only for myself but also to discuss work progress
+        with stakeholders.
+    </p>
+    <p>
+        It is important that everyone understands that UX is not UI, and UI is not only
+        about colours and buttons.
+        It happened to me many times: I show a new feature concept that visualized in a way  that it looks like high fidelity and everyone pay attention to different details – that new shade of gray, unclear icon or typo in your copy, but
+        not on the concept itself. Using low fidelity help you to filter unnecessary details and keep focus on what is
+        important, even if you can’t wait to make it pretty.
+
+    </p>
+
+    <h2>
+        Getting feedback
+    </h2>
+    <p>
+        I believe communication during design process has to be as frequent as possible. Even if it’s not in the company
+        culture
+        yet, you should deliberately ask for feedback from teammates, colleagues who are in support and more. To be
+        honest, I find asking for feedback from fellow designers the least valuable, most of the time they either
+        have very narrow attention to visual details, either share more or less same thoughts as myself on the things we
+        are
+        making. The most valuable feedback I get from people, whos work and life views are different from mine.
+
+    <h2>
+        Talking to developers
+    </h2>
+    <p>
+        I have got a little tiny secret weapon - my past frontend developer career. I used to code myself the stuff I
+        was designing and although I do not do it that much anymore, it affects radically the way I
+        design and it helps a lot. It’s not only about designing things that can be translated into code (honestly,
+        everything could, the question is the with what effort), it’s more about making things efficiently and speaking
+        to developers on their language. </p>
+    <p>I try to involve frontenders into the discussion as early as possible.
+        They can give a lot of insights regarding the technologies that can and going to be used, you can find UI
+        solutions out of the
+        box (no need to reinvent the while every time), and the most importantly (actually it matters for any
+        stakeholders), involving
+        people on early stages and listening to their feedback you make them being true owners of what you are making,
+        they start loving the work you are doing together and it creates better working relations. I think that’s a
+        mistake done by many designers - they just shoot their mockups to developers and expect those would implement it
+        pixel-by-pixel. </p>
+
+    <p>
+        We are lucky to have a great frontend developer who is open to new ways of working and communication. As we have
+        started brainstorming on the new designs early in the process, we have also decided to start developing (rather
+        prototyping in code) way before we have any final designs.
+        We began with implementing the basic responsive layouts, setting up the styles: colours, typography, spacing
+        framework, then core components such as navigation, tables,
+        sliding panels, legendary buttons and forms etc. After switching to more specific screens and elements, adding
+        more details and liking real data endpoints.
+    </p>
+
+    <h3>
+        Technical challange
+    </h3>
+    <p>Luckily, our current backend is completely independent and quite reliable, so for now we can just use the
+        existent API’s and let developers improve them on their rhythm. </p>
+    <p>
+        But frontend has to be re-done completely. Currently, there are 2 independent versions, react web app for mobile
+        devices and an old Angular application for desktops. They look very different and both have clunky interfaces,
+        inconsistent design and, from frontend perspective, bad quality outdated code.
+
+    </p>
+    <p>
+        The decision we made is to keep maintaining both old apps, do not invest too much energy in optimizing them, and
+        develop a brand new responsive React App in parallel.
+    </p>
+    <p>
+        Quite a brave decision that has some pro’s and con’s:</p>
+    <h4>
+        Advantages of building from scratch are:
+    </h4>
+    <ul>
+        <li>
+            <strong>Keep costs down: </strong>Maintaining one app is easier then 2 or more. We could decide to go for
+            web and native
+            iOS and Android apps, but it requires a lot more resources as from design side, and even more from
+            development. And often it’s hard to keep the same functionality in the longer term, some teams would always
+            deliver faster than others. That’s what happened with our current mobile and desktop apps. So with current
+            team size (one designer (myself) and one experienced React Developer), it’s the only way to go.
+        </li>
+        <li><strong>
+            Keep consistency up: </strong>Agreeing on providing same functionality and consistent user experience across
+            devices,
+            we would be more conscious and critical of our design decisions. Keeping in mind mobile version while
+            designing the desktop one would only benefit from the desktop one, you would question every detail and try
+            to simplify it to the edge.
+        </li>
+        <li><strong>
+            Future-proof:</strong> There will be always more screen sizes and devices, OS requiments will change,
+            responsive version would cover them better.
+        </li>
+    </ul>
+
+    <h4>
+        Disadvantages:
+    </h4>
+    <ul>
+        <li>
+            <strong>Performance. </strong>Native apps often faster and have more functional perks, like gestures and
+            access to the
+            device resources.
+        </li>
+        <li><strong>
+            Complexity.</strong> Developing and designing is much more challenging, more possibility to overcomplicate
+            code or some screen
+            resolutions.
+        </li>
+    </ul>
+
+    <h3>
+        Why not Agile Transition?
+    </h3>
+    <p>
+        We have immediately refused to transform the current solutions to the new one with a bunch of reasons:
+    </p>
+
+    <ul>
+        <li>
+            The quality of current design is very poor, having to fight for every change would make us compromise on
+            everything.
+            That would limit our ambitions to build something revolutionary and drug us back. And it’s simply hard to
+            rethink
+            the whole experience when you always have to think about the transition from the current (broken) one.
+        </li>
+        <li>
+            There are too many (unexpected) code dependencies, hard fixes, outdated technologies used. Transition to
+            something new would
+            just
+            cost way too much effort than building the brand new one, not mentioning that the quality will be definitely
+            much
+            better.
+        </li>
+    </ul>
+
+
+
+</section>
+
+<section class="back-forth">
+
+    <a href="part-2.html" class="back-forth--back">
+        <div class="back-forth-icon back-forth-icon--back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/>
+            </svg>
+        </div>
+        <div class="back-forth--content">
+            <span class="back-forth-link">
+                Previous
+            </span>
+            <h4 class="back-forth-title">
+                Part 2.
+                Architecture and navigation
+            </h4>
+        </div>
+    </a>
+
+    <a href="part-4.html" class="back-forth--forth">
+        <div class="back-forth--content">
+    <span class="back-forth-link">
+        Next
+    </span>
+    <h4 class="back-forth-title">
+        Part 4.
+        Crafting the new interface
+    </h4>
+    </div>
+    <div class="back-forth-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/>
+        </svg>
+    </div>
+    </a>
+
+</section>
+</body>
+</html>

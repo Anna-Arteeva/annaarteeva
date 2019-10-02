@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 2. DeGiro Trading Platform redesign. Anna Arteeva - Product Designer, UX specialist </title>
+    <link rel="stylesheet" href="../../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<nav class="nav">
+    <a class="nav--link" href="../../index.html">
+        Portfolio
+    </a>
+    <a class="nav--link" target="_blank" href="https://www.linkedin.com/in/annaarteeva/">
+        CV
+    </a>
+    <a class="nav--link" href="../../about.html">
+        About
+    </a>
+</nav>
+
+<section class="article">
+
+    <h6 class="article-date">January 2018</h6>
+    <h1 class="article-title">
+        Part 2.<br>
+        Architecture and navigation
+    </h1>
+    <p class="article-intro">
+        It is essential to have a view from the top, where you could see the core parts of the product at once and
+        connections between them. I call it a product architecture. Having this properly thought through and logically
+        structured will help to create a meaningful navigation, the backbone of the Product.
+    </p>
+
+    <blockquote class="article-quote">
+        “Think big, start small&rdquo;
+    </blockquote>
+
+    <h2>Product architecture</h2>
+    <p>I have started with analyzing the current solution. It was built feature after feature, most probably by
+        different people, not considering much how it is going to be used and evolved in future. </p>
+    <p>Here is the top navigation of the web app, and it's schematic representation below.</p>
+    <img class="article-picture" src="../../assets/img/degiro/current-navigation.png">
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--current.png">
+
+    <p>Just looking at this map easy to see some possible improvements. I was trying to simplify it first, got rid of
+        some noise, like doubled &quot;Log out&quot; and almost same functionality for Search and Quick order. Some
+        pages were merged, for example, orders in progress were named like Orders, and the past one - Transactions,
+        accordingly located on two different pages. It would make more sense to leave only one entity - Order - and
+        assign different states to it - Open, in Progress, Expired, Closed etc. </p>
+    <p>After I started re-combining pages and actions into logical groups. For example, all money related actions were
+        spread out through the whole navigation. There were 3 different pages related to Currency exchange: Cash funds
+        overview accessible from the status section on every page, Currency exchange settings accessible from Settings
+        section, and Currency Transactions that were located to Orders section with no clear reason. Eventually, I have
+        elegantly combined all those screens into one. Deposit and Withdraw money, on the other hand, were squeezed into
+        one page. Money flow history was hidden in Portfolio section. Eventually, all money related screen and actions
+        were allocated to one section.</p>
+
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--in-progress.png">
+    <p class="article-picture-title">
+        Brainstorming on the current product architecture
+    </p>
+
+    <h4 class="mt-5">
+        User flows
+    </h4>
+    <p>The next step was to analize different user flows. I have already mentioned that users tended to skip the home
+        page that showed the Global Markets information, switching immediately to their Portfolio. These two screens
+        would logically belong to two different flows: Markets page was build to help users explore new possibilities
+        and get a quick view to the global numbers, the Portfolio tells about performance of products they own. So here
+        we
+        have two independent journeys -<strong> Analysis</strong> of existing portfolio and <strong>Search</strong> for
+        new opportunities. Therefore I have distinguished two sections - <strong>My trader</strong>, that included all
+        information and actions specific for the user, and<strong> Browse markets</strong> including the research
+        functionality. </p>
+
+
+    <img src="../../assets/img/degiro/current-most-common-journey.png" alt="DeGiro Current Journey" class="article-picture">
+    <p class="article-picture-title">
+        The current user journey
+    </p>
+
+    <img src="../../assets/img/degiro/optimised-common-journey.png" alt="DeGiro Imporved Journey" class="article-picture">
+    <p class="article-picture-title">
+        Optimised user journey
+    </p>
+
+    <h4 class="mt-5">
+        Future functionality
+    </h4>
+    <p>Another aspect to keep in mind when you are working on the architecture - the possible future functionality. Of
+        course itis impossible to predict the exact evolution of what you are building, but the more time you invest in
+        it at the beginning, the more prepared you will be. Notification Center was one of the functions that can't be
+        developed fully yet, but something that will be definitely necessary at some point. Moreover, there are
+        things that logically can already belong to the notification Section - such as Tasks (when a user is requested
+        to provide legal details). Later on, we can add all types of updates, user subscriptions, price alerts etc. It
+        is better to add the Notification Center and keep the functionality limited earlier, so we will not have to look
+        for place and re-educate people later. </p>
+
+
+<h4 class="mt-5">
+    New architecture
+</h4>
+    <p>The final (at this moment) map you see below is the result of several loops of my design workflow when I have
+        created wireframes and mockups for many intermediate versions that were tested proven to be imperfect. </p>
+    <p>&nbsp;</p>
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--new.png">
+
+    <p class="article-picture-title">
+        Optimised architecture. Blue titles - new functionality.
+    </p>
+    <h2 class="mt-5">
+        Navigation
+    </h2>
+    <p>
+        Navigation is the backbone of any product. I will not tell about the value of simple and intuitive navigation,
+        there are hundreds of article written about it.
+    </p>
+    <h4>
+        Responsivness
+    </h4>
+    <p>
+        From the beginning, we knew that we are going to build a responsive web app from scratch so I had to design
+        keeping at least three possible layouts in mind. We ended up with five of them - Desktops, Laptops, Tablets,
+        Mobiles in
+        portrait and landscape orientation. </p>
+
+    <img class="article-picture" src="../../assets/img/degiro/navigation.png">
+    <p>Switching across platforms has to be as seamless as possible, many traders would use up to 3 devices on a regular
+        bases, sometimes they will stretch the browser onto 2 HD displays, other times they will want quickly react
+        using their phone in the metro. Often Mobile apps and their desktop alternatives have very different navigation
+        logic, not mentions that functionality can be limited as well. Every time you switch the device, you need to
+        learn using it again, you remember where one button was placed on the web version, but on the mobile version, it
+        just does not exist. </p>
+    <p>Here comes the value of having a little number of sections - it is not only easy to navigate and remember, but
+        also scales down easily. We limited ourselves to five items- that's what we want to keep visible in the smallest devices. </p>
+    <h4>
+        Layout. No hamburgers.
+    </h4>
+    <p>Choosing the layout was the next big decision to make. Currently the most popular solution and what we currently
+        have is top navigation that shrinks into hamburger on mobiles. Hate it! It is horrible: the size of section
+        depends on a section name size (and we have German to support!), there will be always the resolution that it
+        does not fit or will look way too empty, if make it fixed - it will eat the space that could use to show more
+        lines of text. And the hamburger is a different story, it's hidden, harder to keep the content hierarchy inside
+        it, because there is no limit for a number of items - it will end up to be a long long list. </p>
+
+    <div style="position: relative; overflow: hidden;">
+        <video class="article-picture--small" autoplay loop style="position: relative; left:-1px;">
+            <source src="../../assets/img/degiro/responsive-navigation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p>Our solution was to use side navigation for bigger screens and bottom iOS-style navigation for smaller ones. </p>
+    <p>The desktop navigation was meant to be fixed to the side. So yes, it would eat that space that could be used for
+        something else. But is it really a problem? Most of the laptop screens are horizontally oriented, so you would
+        balance the viewport by reducing the width rather than size (remember MS Word 2003 Toolbar?). Second, remember
+        that in most of the websites you get huge side margins? Wide lines of content are harder to perceive, even in
+        old books you can find text distributed into several columns. So we would leave that space empty anyway. </p>
+
+    <p>The biggest concern was using the icons versus text. Fixing section titles on the side was not the option, then
+        we would take way too much space, we would depend on the word size (aha, German will take more than Chinese),
+        and it would take way to much attention when it is not necessary. People do not need read the navigation at any
+        single moment. </p>
+    <p>Luckily there are not that many desktop devices that are touch only, so we can rely on hover actions to show
+        tooltips to explain icons. The benefit of having fewer section plays a big role here too - people need to
+        remember just a few icons, probably they will remember it the first time they try the app. We can also show sub
+        navigation
+        for some sections.</p>
+    <p>On the other hand, we keep the text for mobile devices, but luckily we only have four words to display. </p>
+
+</section>
+
+<section class="back-forth">
+
+    <a href="degiro.html" class="back-forth--back">
+        <div class="back-forth-icon back-forth-icon--back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/>
+            </svg>
+        </div>
+        <div class="back-forth--content">
+            <span class="back-forth-link">
+                Previous
+            </span>
+            <h4 class="back-forth-title">
+                Part 1.
+                Research and design workflow.
+            </h4>
+        </div>
+    </a>
+
+    <a href="part-3.html" class="back-forth--forth">
+        <div class="back-forth--content">
+    <span class="back-forth-link">
+        Next
+    </span>
+    <h4 class="back-forth-title">
+        Part 3.
+        Team communication and development hand-off
+    </h4>
+    </div>
+    <div class="back-forth-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/>
+        </svg>
+    </div>
+    </a>
+
+</section>
+</body>
+</html>

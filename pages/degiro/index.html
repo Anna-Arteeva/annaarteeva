@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeGiro Trading Platform - redesign project. Anna Arteeva - Product Designer, UX specialist </title>
+    <link rel="stylesheet" href="../../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<nav class="nav">
+    <a class="nav--link" href="../../index.html">
+        Portfolio
+    </a>
+    <a class="nav--link" target="_blank" href="https://www.linkedin.com/in/annaarteeva/">
+        CV
+    </a>
+    <a class="nav--link" href="../../about.html">
+        About
+    </a>
+</nav>
+
+<section class="article">
+
+    <h6 class="article-date">May 2018</h6>
+    <h1 class="article-title">DEGIRO Trading Platform <br>re-design</h1>
+    <p class="article-intro">In 2017 DeGiro Trading Platform became one of the five biggest brokers in the world and by
+        far the largest in Europe, beating the competitors with lower fees and a huge selection of products. As a
+        product designer I was part of an ambitious project to redesign the Platform and Trading experience and
+        prepare it to scale. I am going to share with you the work I have done and what I have learnt. </p>
+    <img src="../../assets/img/degiro/home-cover-v2.png" alt="" class="article-picture">
+
+
+    <h2>The challenge</h2>
+    <p>In just 4 years
+        DeGiro
+        revolutionized the trading industry making it accessible to millions of people across the globe.
+        The web platform (designed in 2013) and the mobile app (designed a couple of years later) struggled to keep up alongside the growth of the company. <br>
+    </p>
+    <p>
+        The applications were not able to add any more functionality without ruining performance and user experience.
+        They were hard to navigate, the code base became unmaintainable. </p>
+    <img src="../../assets/img/degiro/current-interface.png" alt="" class="article-picture--small">
+    <p class="article-picture-title">
+        The current desktop and mobile apps
+    </p>
+
+    <h2>
+        My role
+    </h2>
+
+    <p>
+        I was working alongside with the Project Manager and Frontend Engineer to create the prototype of the shiny new platform.
+    </p>
+
+
+    <h2 class="article-subtitle">
+        Design workflow
+    </h2>
+
+    <p>
+        That's an exciting challange to tackle such a massive project basically by myself. But it's easy to get overwhelmed and follow the wrong path working solo on the. That's why I have created a working plan that helped me to keep the zoom on the big picture and forced to verify the ideas early enough. Here is the summarized version:
+    </p>
+
+    <section class="content-block">
+        <h4>
+            1. Analyze the current product
+        </h4>
+        <ul>
+            <li>
+                Define core user goals and tasks
+            </li>
+            <li>
+                Find weak parts in the current platform, where user tasks are done inefficiently
+            </li>
+            <li>
+                Find more growth opportunities
+            </li>
+        </ul>
+        <h4>
+            2. Research
+        </h4>
+
+        <ul>
+            <li>
+                Get to know direct and indirect competitors, their products, pro’s and con’s, finding differences in products and the target audience
+            </li>
+            <li>
+                Find interesting ideas and solutions from other fields, such as smooth user flows, UI ideas etc.
+            </li>
+            <li>
+                Self-education: get familiar with the market and industry, its history, potential, future expectations and disruptive innovations.
+            </li>
+            <li>
+                Get to know your user, what would be the target audience(s), their background, values, other products they are using, etc.
+            </li>
+        </ul>
+        <h4>
+            3. Roadmap:
+        </h4>
+        <ul>
+            <li>5 years</li>
+            <li>5 months (MVP version for the first release)</li>
+            <li>5 weeks</li>
+        </ul>
+        <h4>
+            4. Architecture
+        </h4>
+        <ul>
+            <li>Define main user jobs and related user flows</li>
+            <li>Map out the product architecture</li>
+        </ul>
+        <h4>
+            5. Wireframes
+        </h4>
+        <ul>
+            <li>
+                Design the basic UI: responsive layouts, navigation, interactions
+            </li>
+            <li>
+                Make the first level of fidelity for the core screens and user flows (paper sketches)
+            </li>
+        </ul>
+        <h4>
+            6. Discuss
+        </h4>
+        <ul>
+            <li>Make sure user goals do not conflict with business goals</li>
+            <li>Talk to developers to understand technical boundaries</li>
+            <li>Prioritize</li>
+        </ul>
+        <h4>
+            7. Design language
+        </h4>
+        <ul>
+            <li>Basic color palette, typography, basic brand elements</li>
+            <li>Set the tone of voice</li>
+            <li>Set up the design environment (libraries and files system)</li>
+        </ul>
+        <h4>
+            8. Test and get feedback
+        </h4>
+        <h4>
+            9. Make the implementation plan and get started
+        </h4>
+        <h4>
+            11. Iterate
+        </h4>
+    </section>
+
+    <p>
+I apply this workflow on different scales - gradually zooming in from the rough concept to an every feature design, jumping from the last step back to the first one, adding more details and verifying decisions made in previous phases. It's like an artist painting a picture - sketching the general shapes first and adding more details layer after layer (my fine arts education has proven to be useful in an unexpected manner).
+    </p>
+
+    <h2 class="article-subtitle">
+        Phase 1. Research.
+    </h2>
+        I have started with investigating what are the user’s
+        motivations and most common user journeys. it turned out there are radically different way people used the app:
+
+    <ol>
+        <li>
+            Long-term investing - they would buy and keep for a longer period, waiting for selling prices to rise
+        </li>
+        <li>
+            Day trading - they would buy and sell hundreds times a day, gaining on price differences
+        </li>
+    </ol>
+    <p>
+        These are completely different use cases, but people use exactly the same interface to perform them.
+    </p>
+    <p>
+        Here is the most common daily user flow for an investor:
+    </p>
+    <img src="../../assets/img/degiro/current-most-common-journey.png" alt="DeGiro Current Journey" class="article-picture">
+
+    <p>
+        Optimised investor flow:
+    </p>
+    <img src="../../assets/img/degiro/optimised-common-journey.png" alt="DeGiro Imporved Journey" class="article-picture">
+
+    <p>
+        It illustrates how they tend to skip the homepage with irrelevant functionality, to go straight to their portfolio analytics. </p>
+
+
+    <blockquote class="article-quote">
+        “Think big, start small&rdquo;
+    </blockquote>
+
+
+    <h2>Product architecture</h2>
+    <p>The current solution was build feature after feature without considering much how they logically connect to each other. </p>
+    <p>Here is the top navigation of the web app:
+    <img class="article-picture" src="../../assets/img/degiro/current-navigation.png">
+
+    <p>..and it's schematic representation:</p>
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--current.png">
+    <p>Just looking at this map easy to see some possible improvements: some links are doubled, some could be grouped together, other splitted.
+        </p>
+
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--in-progress.png">
+    <p>After cleaning up and brainstorming the future ambitions, in multiple iterations, we ended up with a new architecture:
+    </p>
+
+    <img class="article-picture" src="../../assets/img/degiro/information-architechure--new.png">
+    <p class="article-picture-title">
+        Optimised architecture. Blue titles - new functionality.
+    </p>
+
+    <h2 class="mt-5">
+        Navigation
+    </h2>
+    <h4>
+        Responsivness
+    </h4>
+    <p>
+        From the beginning, we have decided to build a responsive web app so I had to design
+        keeping at least three possible layouts in mind. We ended up with five of them - Desktops, Laptops, Tablets,
+        Mobiles in
+        portrait and landscape orientation. </p>
+
+    <img class="article-picture" src="../../assets/img/degiro/navigation-cover.png">
+    <p>Switching across platforms has to be as seamless as possible. Often Mobile apps and their desktop alternatives have very different navigation
+        logic, not mentions that functionality can be limited as well.
+        Every time you switch a device, you need to
+        learn how to use it again. </p>
+
+    <p>Here comes the value of having a little number of sections - it is not only easy to navigate and remember, but
+        also scales down easily. We limited ourselves to five items- that's what we want to keep visible in the smallest devices. </p>
+
+    <div style="position: relative; overflow: hidden;">
+        <video class="article-picture--small" autoplay loop controls style="position: relative; left:-1px;">
+            <source src="../../assets/img/degiro/responsive-navigation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p>Read more about creating this navigation layout <a href="https://medium.com/@annaarteeva/designing-cross-platform-navigation-layout-e8cc6e81a552" target="_blank">here</a>  </p>
+
+
+
+        <blockquote class="article-quote">
+            “Involving people on early stages and listening to their feedback you make them being true owners of what your
+            are making”
+        </blockquote>
+
+        <h2>
+            The value of low fidelity
+        </h2>
+        <p>
+            I always start with sketches on paper, not only for myself but also to discuss work progress with stakeholders.
+        </p>
+        <p>
+            It is important that everyone understands that UX is not UI, and UI is not only
+            about colours and buttons.
+            If I show a new concept in high fidelity then people pay attention to wrong details – that new shade of gray, unclear icon or typo in copy, but
+            not on the concept itself. Using low fidelity help you to filter unnecessary details and keep focus on what is
+            important, even if you can’t wait to make it pretty.
+        </p>
+
+    <h2>
+        Getting feedback
+    </h2>
+    <p>
+        I believe that getting feedback as early as possible is essential for building a healthy product.  I find the feedback from fellow designers the least valuable, most of the time they either
+        too focused on visual details, either they have the same thoughts as myself because of our similar background. The most valuable feedback I get from people, whos jobs and views are totally different from mine.
+    </p>
+
+    <h2>
+        Talking to developers
+    </h2>
+    <p>I try to get developers involved as early as possible.
+        They can give a lot of insights regarding the technologies that can and going to be used, you can find
+        solutions out of the
+        box (no need to reinvent the wheel every time). I think a
+        mistake most designers make - they just shoot their polished mockups to developers and expect those would implement it pixel-by-pixel.
+    </p>
+    <h3>
+        Responsive Web app vs. Native apps
+    </h3>
+    <p>
+        The decision was to
+        develop a brand new responsive React App instead of current Desktop (Early Angular) and Mobile (hastily stitched React App).
+    </p>
+    <p>
+        Quite a brave decision that has some pro’s and con’s:</p>
+    <h4>
+        Advantages:
+    </h4>
+    <ul>
+        <li>
+            <strong>Keep costs down: </strong>Maintaining one code base is easier then 2 or more.
+        </li>
+        <li><strong>
+            Consistency across devices. </strong>
+            Keeping in mind mobile version while designing the desktop would force us to be more conscious of our design choices and not let redundancy into the desktop version.
+        </li>
+        <li><strong>
+            Longer life-time:</strong> There will be always more screen sizes and devices, OS requiments will change, responsive version would cover them better.
+        </li>
+    </ul>
+    <h4>
+        Disadvantages:
+    </h4>
+    <ul>
+        <li>
+            <strong>Performance. </strong>Native apps often faster and have more functional perks, like gestures and
+            access to the
+            device resources.
+        </li>
+        <li><strong>
+            Code complexity.</strong> Too many responsivness conditions can overcomplicate code, it's also harder to onboard new team members.
+        </li>
+    </ul>
+
+
+    <h2>
+        Crafting the new interface
+    </h2>
+    <h3>
+        Responsive layouts and basic components
+    </h3>
+    <p>
+        I tried to design the layout and components in a way that they can be easily re-used on different screen resolutions. Vertical panels are very powerful – they allow to use the maximum of space on larger screens, and naturally land in mobiles. Weanwhile the components inside them stay the same everywhere.
+    </p>
+
+    <img class="article-picture" src="../../assets/img/degiro/product-details.png">
+
+    <video class="article-picture--small" autoplay loop controls>
+        <source src="../../assets/img/degiro/status-widget.mp4" type="video/mp4">
+    </video>
+    <img class="article-picture--small" src="../../assets/img/degiro/mobile-dashboard.gif">
+
+    <h2>
+        Design system and tools
+    </h2>
+    <p><a href="design-system.html">Read more about the design system, tools and the process here</a>
+    </p>
+
+    <img src="../../assets/img/design-system/work-on-status.png" alt=" " class="article-picture">
+
+    <h2>
+        More
+    </h2>
+
+    <h3>Hierarchical interface</h3>
+    <video class="article-picture" autoplay loop controls>
+        <source src="../../assets/img/degiro/side-panels.mp4" type="video/mp4">
+    </video>
+
+
+    <h3>Placing an order flow</h3>
+    <video class="article-picture" autoplay loop controls>
+        <source src="../../assets/img/degiro/placing-order.mp4" type="video/mp4">
+    </video>
+
+    <video class="article-picture" autoplay loop controls>
+        <source src="../../assets/img/degiro/deposit-tablet.mp4" type="video/mp4">
+    </video>
+
+    <h3>Early Dashboard version</h3>
+    <img class="article-picture" src="../../assets/img/degiro/early-dashboard.png">
+
+    <h3>Later Dashboard - My Trader</h3>
+    <img class="article-picture" src="../../assets/img/degiro/home-cover-v2.png">
+
+</section>
+
+
+
+</body>
+</html>
