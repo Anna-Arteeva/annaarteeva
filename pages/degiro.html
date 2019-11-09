@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>DeGiro Trading Platform - redesign project. Anna Arteeva - Product Designer, UX specialist </title>
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
 <nav class="nav">
-    <a class="nav--link" href="../../index.html">
+    <a class="nav--link" href="../index.html">
         Portfolio
     </a>
     <a class="nav--link" target="_blank" href="https://www.linkedin.com/in/annaarteeva/">
         CV
     </a>
-    <a class="nav--link" href="../../about.html">
+    <a class="nav--link" href="../about.html">
         About
     </a>
 </nav>
@@ -28,7 +28,7 @@
         far the largest in Europe, beating the competitors with lower fees and a huge selection of products. As a
         product designer I was part of an ambitious project to redesign the Platform and Trading experience and
         prepare it to scale. I am going to share with you the work I have done and what I have learnt. </p>
-    <img src="../../assets/img/degiro/home-cover-v2.png" alt="" class="article-picture">
+    <img src="../assets/img/degiro/home-cover-v2.png" alt="" class="article-picture">
 
 
     <h2>The challenge</h2>
@@ -40,7 +40,7 @@
     <p>
         The applications were not able to add any more functionality without ruining performance and user experience.
         They were hard to navigate, the code base became unmaintainable. </p>
-    <img src="../../assets/img/degiro/current-interface.png" alt="" class="article-picture--small">
+    <img src="../assets/img/degiro/current-interface.png" alt="" class="article-picture--small">
     <p class="article-picture-title">
         The current desktop and mobile apps
     </p>
@@ -172,12 +172,12 @@ I apply this workflow on different scales - gradually zooming in from the rough 
     <p>
         Here is the most common daily user flow for an investor:
     </p>
-    <img src="../../assets/img/degiro/current-most-common-journey.png" alt="DeGiro Current Journey" class="article-picture">
+    <img src="../assets/img/degiro/current-most-common-journey.png" alt="DeGiro Current Journey" class="article-picture">
 
     <p>
         Optimised investor flow:
     </p>
-    <img src="../../assets/img/degiro/optimised-common-journey.png" alt="DeGiro Imporved Journey" class="article-picture">
+    <img src="../assets/img/degiro/optimised-common-journey.png" alt="DeGiro Imporved Journey" class="article-picture">
 
     <p>
         It illustrates how they tend to skip the homepage with irrelevant functionality, to go straight to their portfolio analytics. </p>
@@ -191,18 +191,18 @@ I apply this workflow on different scales - gradually zooming in from the rough 
     <h2>Product architecture</h2>
     <p>The current solution was build feature after feature without considering much how they logically connect to each other. </p>
     <p>Here is the top navigation of the web app:
-    <img class="article-picture" src="../../assets/img/degiro/current-navigation.png">
+    <img class="article-picture" src="../assets/img/degiro/current-navigation.png">
 
     <p>..and it's schematic representation:</p>
-    <img class="article-picture" src="../../assets/img/degiro/information-architechure--current.png">
+    <img class="article-picture" src="../assets/img/degiro/information-architechure--current.png">
     <p>Just looking at this map easy to see some possible improvements: some links are doubled, some could be grouped together, other splitted.
         </p>
 
-    <img class="article-picture" src="../../assets/img/degiro/information-architechure--in-progress.png">
+    <img class="article-picture" src="../assets/img/degiro/information-architechure--in-progress.png">
     <p>After cleaning up and brainstorming the future ambitions, in multiple iterations, we ended up with a new architecture:
     </p>
 
-    <img class="article-picture" src="../../assets/img/degiro/information-architechure--new.png">
+    <img class="article-picture" src="../assets/img/degiro/information-architechure--new.png">
     <p class="article-picture-title">
         Optimised architecture. Blue titles - new functionality.
     </p>
@@ -219,7 +219,7 @@ I apply this workflow on different scales - gradually zooming in from the rough 
         Mobiles in
         portrait and landscape orientation. </p>
 
-    <img class="article-picture" src="../../assets/img/degiro/navigation-cover.png">
+    <img class="article-picture" src="../assets/img/degiro/navigation-cover.png">
     <p>Switching across platforms has to be as seamless as possible. Often Mobile apps and their desktop alternatives have very different navigation
         logic, not mentions that functionality can be limited as well.
         Every time you switch a device, you need to
@@ -230,7 +230,7 @@ I apply this workflow on different scales - gradually zooming in from the rough 
 
     <div style="position: relative; overflow: hidden;">
         <video class="article-picture--small" autoplay loop controls style="position: relative; left:-1px;">
-            <source src="../../assets/img/degiro/responsive-navigation.mp4" type="video/mp4">
+            <source src="../assets/img/degiro/responsive-navigation.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -324,12 +324,12 @@ I apply this workflow on different scales - gradually zooming in from the rough 
         I tried to design the layout and components in a way that they can be easily re-used on different screen resolutions. Vertical panels are very powerful – they allow to use the maximum of space on larger screens, and naturally land in mobiles. Weanwhile the components inside them stay the same everywhere.
     </p>
 
-    <img class="article-picture" src="../../assets/img/degiro/product-details.png">
+    <img class="article-picture" src="../assets/img/degiro/product-details.png">
 
     <video class="article-picture--small" autoplay loop controls>
-        <source src="../../assets/img/degiro/status-widget.mp4" type="video/mp4">
+        <source src="../assets/img/degiro/status-widget.mp4" type="video/mp4">
     </video>
-    <img class="article-picture--small" src="../../assets/img/degiro/mobile-dashboard.gif">
+    <img class="article-picture--small" src="../assets/img/degiro/mobile-dashboard.gif">
 
     <h2>
         Design system and tools
@@ -337,7 +337,7 @@ I apply this workflow on different scales - gradually zooming in from the rough 
     <p><a href="design-system.html">Read more about the design system, tools and the process here</a>
     </p>
 
-    <img src="../../assets/img/design-system/work-on-status.png" alt=" " class="article-picture">
+    <img src="../assets/img/design-system/work-on-status.png" alt=" " class="article-picture">
 
     <h2>
         More
@@ -345,24 +345,24 @@ I apply this workflow on different scales - gradually zooming in from the rough 
 
     <h3>Hierarchical interface</h3>
     <video class="article-picture" autoplay loop controls>
-        <source src="../../assets/img/degiro/side-panels.mp4" type="video/mp4">
+        <source src="../assets/img/degiro/side-panels.mp4" type="video/mp4">
     </video>
 
 
     <h3>Placing an order flow</h3>
     <video class="article-picture" autoplay loop controls>
-        <source src="../../assets/img/degiro/placing-order.mp4" type="video/mp4">
+        <source src="../assets/img/degiro/placing-order.mp4" type="video/mp4">
     </video>
 
     <video class="article-picture" autoplay loop controls>
-        <source src="../../assets/img/degiro/deposit-tablet.mp4" type="video/mp4">
+        <source src="../assets/img/degiro/deposit-tablet.mp4" type="video/mp4">
     </video>
 
     <h3>Early Dashboard version</h3>
-    <img class="article-picture" src="../../assets/img/degiro/early-dashboard.png">
+    <img class="article-picture" src="../assets/img/degiro/early-dashboard.png">
 
     <h3>Later Dashboard - My Trader</h3>
-    <img class="article-picture" src="../../assets/img/degiro/home-cover-v2.png">
+    <img class="article-picture" src="../assets/img/degiro/home-cover-v2.png">
 
 </section>
 
