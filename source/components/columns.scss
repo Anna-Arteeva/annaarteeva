@@ -1,0 +1,26 @@
+.columns--content {
+  display: grid;
+  grid-template-columns: repeat( auto-fit,  minmax(6rem, 1fr) );
+  grid-column-gap: 3vw;
+
+  @include for-tablet-portrait-down {
+
+    grid-template-columns: inherit;
+    grid-column-gap: inherit;
+    grid-template-rows: auto;
+  }
+
+  .screenshot-wrapper {
+
+    @include for-tablet-portrait-up {
+      height: 350px;
+
+      .screenshot {
+        max-height: 100%;
+        margin: auto;
+        min-width: inherit;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,137 @@
+.about--hero {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3vh;
+  //overflow: hidden;
+
+  margin-top: - $header-height;
+
+  @include for-big-desktop-up {
+    margin-bottom: 5vh;
+  }
+
+  @include for-tablet-landscape-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 96vh;
+    padding-bottom: 5.5vw;
+  }
+}
+
+
+.about--hero--content {
+  @extend .home--hero--content;
+
+  @include for-tablet-landscape-up {
+    padding-right: 35px;
+  }
+
+  @include for-tablet-landscape-down {
+    padding-bottom: 10vh;
+  }
+}
+
+.about--hero--content-wrap {
+  @extend .home--hero--content-wrap;
+
+  @include for-tablet-landscape-down {
+    margin-top: 130px;
+    margin-bottom: 5vh;
+  }
+
+  @include for-desktop-up {
+    h1 {
+      max-width: 300px;
+    }
+  }
+}
+
+.about--hero--img {
+  position: relative;
+
+  @include for-tablet-landscape-down {
+    margin: -15vh 3vw 0;
+    //add horizontal margins
+  }
+
+}
+
+.about--hero--photo-wrap {
+  z-index: 10;
+
+  @include for-tablet-landscape-up {
+    position: absolute;
+    left: -30px;
+    bottom: -3vh;
+  }
+
+  @include for-desktop-up {
+    max-width: 50vw;
+    min-width: 40vw;
+  }
+}
+.about--hero--photo {
+  //max-width: 50rem;
+}
+
+.about--hero--content-lead {
+  @extend .hero-lead;
+  max-width: 30rem;
+
+  @include for-tablet-landscape-down {
+    margin: auto;
+  }
+}
+
+.about--hero--dots {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  max-width: 30vw;
+
+  @include for-tablet-landscape-down {
+    display: none;
+  }
+}
+
+.about-section-gallery {
+  @include for-tablet-landscape-up {
+    margin-top: 5vh;
+  }
+
+  @include for-phone-only {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+  }
+}
+
+.about-gallery--1-row,
+.about-gallery--2-row {
+
+  @include for-tablet-landscape-up {
+    margin-top: -20vh;
+  }
+}
+
+.about-gallery--1-row {
+  align-items: flex-start;
+}
+.about-gallery--2-row {
+  align-items: flex-end;
+}
+
+.subtitle-quote {
+  max-width: 200px;
+
+  @include for-tablet-landscape-up {
+    margin-top: 13vh;
+    margin-left: 5vw;
+  }
+
+  @include for-phone-only {
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+  }
+}

@@ -1,0 +1,136 @@
+.home--hero {
+  min-height: 98vh;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3vh;
+  margin-top: - $header-height;
+
+  @include for-big-desktop-up {
+    margin-bottom: 5vh;
+  }
+
+  @include for-tablet-portrait-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  @include for-tablet-portrait-down {
+    display: flex;
+    justify-content: stretch;
+  }
+}
+
+.home--hero--content {
+  position: relative;
+  background: $color-brand;
+  background: $gradient-brand;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+
+  @include for-tablet-landscape-up {
+    border-bottom-right-radius: $border-radius-lg;
+  }
+
+  @include for-tablet-landscape-down {
+    text-align: center;
+    padding-bottom: 30vh;
+  }
+
+  @include for-tablet-portrait-down {
+    padding-bottom: 0;
+    width: 100vw;
+  }
+
+
+  @include for-tablet-portrait-up {
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 3vh;
+      right: 9vw;
+      width: 374px;
+      height: 374px;
+      background: url("../assets/img/dots-pattern.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.home--hero--content-wrap {
+  max-width: 60rem;
+  padding: 3vw;
+
+  @include for-desktop-up {
+    padding-left: 6vw;
+  }
+
+}
+
+.hero-back {
+  position: absolute;
+ //width:  1em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+.hero-button {
+  margin-top: 4vh;
+}
+
+.home--hero--img {
+  position: relative;
+  background-image: url("../assets/img/home/graph.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.home--hero--review-floaties {
+  position: absolute;
+
+  @include for-tablet-portrait-up {
+    left: -20vw;
+    bottom: 5vh;
+    z-index: 10;
+    max-width: 40vw;
+  }
+
+  @include for-tablet-portrait-down {
+    left: -100vw;
+    width: 100vw;
+    bottom: -15vw;
+  }
+}
+
+.home--hero--content-lead {
+  @extend .hero-lead;
+  max-width: 30rem;
+}
+
+.home--hero--chart {
+  position: absolute;
+  right: 8vw;
+  bottom: 3vh;
+  max-width: 25vw;
+
+  @include for-tablet-portrait-down {
+    display: none;
+  }
+}
+
+.home--hero--dots {
+  position: absolute;
+  right: -20%;
+  top: 70%;
+  max-width: 30vw;
+  display: none;
+
+  @include for-tablet-portrait-down {
+    display: none;
+  }
+}

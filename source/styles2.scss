@@ -1,0 +1,18 @@
+//sass --watch source/styles2.scss:styles2.css
+
+@import "home";
+
+
+//Variables
+@import 'variables/variables';
+
+//MIXINS
+@import 'mixins/mixins';
+
+//base
+@import 'base/typography';
+
+//components
+@import 'components/sections';
+@import 'components/image-section';
+@import 'components/columns';

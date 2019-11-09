@@ -1,0 +1,59 @@
+.section-breakpoints {
+  margin-left:           auto;
+  margin-right:          auto;
+
+  @include for-desktop-up {
+    width: $section-width-desktop;
+    max-width: $section-max-width-desktop;
+  }
+
+  @include for-tablet-portrait-down {
+    width: $section-width-small;
+  }
+}
+
+.section {
+  @extend .section-breakpoints;
+  padding:          $section-padding-v  $section-width-sides-desktop;
+  position:         relative;
+  box-sizing: border-box;
+}
+
+.section--content {
+  margin: auto;
+  max-width: 60rem;
+}
+
+.section-back {
+  background-color: $color-back;
+  @extend .section;
+
+  @include for-desktop-up {
+    border-radius: $border-radius-lg;
+  }
+}
+
+.dark-section {
+  @extend .section-back;
+  color: white;
+  background-color: $color-brand-light;
+  background-color: $gradient-brand;
+  position: relative;
+
+  .subtitle {
+    color: white;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top:     1vh;
+    left:    9vw;
+    width:  374px;
+    height: 374px;
+    max-width: 90vw;
+    background: url("../assets/img/dots-pattern.svg");
+    background-repeat:no-repeat ;
+  }
+}

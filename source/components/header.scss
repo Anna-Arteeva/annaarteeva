@@ -1,0 +1,109 @@
+$header-height: 115px;
+
+.header {
+  @extend .section-breakpoints;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $section-padding-v-xs $section-width-sides-desktop;
+  position: relative;
+  z-index: 10;
+  height: $header-height;
+
+  @include for-tablet-portrait-down {
+    flex-direction: column;
+  }
+
+  @include for-phone-only {
+    padding-bottom: 0;
+  }
+}
+
+.header--logo {
+  height: 30px;
+  max-width: 45vw;
+
+  &.sm { display: none}
+
+  @include for-tablet-portrait-down {
+    margin: 1.5vh 0;
+  }
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  :last-child { margin-right: 0; }
+}
+
+.header--nav {
+  padding-top: 9px;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+
+  &:last-child { margin-right: 0; }
+}
+
+.header--link {
+  color: $color-base;
+  text-decoration: none;
+  display: inline-block;
+
+  border-bottom: 1px solid  transparent;
+  margin: 0 2rem -1px 0;
+
+  padding-bottom: 16px;
+  font-size: 1rem;
+
+  @include for-tablet-portrait-down {
+    color: white;
+    &.icon {display: none;}
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white !important;
+    }
+  }
+
+  @include for-phone-only {
+    font-size: .9em;
+    padding-bottom: .3rem;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-brand;
+    border-bottom-color: $color-brand;
+    text-decoration: none;
+
+    &.icon {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.header--search {
+  height: 38px;
+  min-width:  38px;
+
+  background: var(--color-outline);
+  border-radius: var(--border-radius-lg);
+}
+
+.header--profile {
+  height: 38px;
+  min-width:  38px;
+
+  background: var(--color-outline);
+  border-radius: var(--border-radius-lg);
+
+  margin-left: 4px;
+
+}
