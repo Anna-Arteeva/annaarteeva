@@ -552,6 +552,12 @@ a {
       max-height: 1000px;
     }
   }
+
+@media (max-width: 900px) {
+  .home--hero {
+    margin: 2rem;
+  }
+}
   @media only screen and (min-width: 738px) {
     .home--hero {
       display: flex;
@@ -732,16 +738,19 @@ margin: 2.5rem 0; }
 
   padding: 10vh 3vw;
   width: calc(100% - 6vw);
+  flex-wrap: wrap;
 }
 
 .reference-wrapper  {
   background-color: #F8F9FC;
   padding: 2rem;
-  max-width: 500px;
+  min-width: 230px;
+  width: calc(30% - 3rem);
+
 }
-@media (min-width: 1200px) {
-  .section-back, .dark-section {
-    border-radius: 7px; }
+@media (max-width: 1200px) {
+  .reference-wrapper  {
+    width: 100%; }
 }
 
 .reference-photo {
@@ -754,9 +763,7 @@ margin: 2.5rem 0; }
 }
 .reference {
   color: var(--color-text);
-  font-size: 1.3rem;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 600;
+  font-size: 1.2rem;
 }
 .reference-name {}
 .reference-author {
