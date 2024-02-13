@@ -757,6 +757,7 @@ margin: 2.5rem 0; }
   border-radius: 50%;
   overflow: hidden;
   width: 60px;
+  min-width: 60px;
   height: 60px;
   border: 2px solid var(--color-icon);
   margin-right: 1rem
@@ -779,4 +780,14 @@ margin: 2.5rem 0; }
 }
 .reference-author p {
   margin-top: .3rem;
+}
+.icon-text-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text-link svg {
+  fill: var(--color-link);
+  margin-right: .5rem;
 }
